@@ -30,8 +30,7 @@ passport.use(new LocalStrategy({
         message: 'Invalid password.',
       });
     }
-
-    return done(null, user);
+    return done(null, user.toJSON());
   }).catch(function (err) {
     return done(err, null);
   });

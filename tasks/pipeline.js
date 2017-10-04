@@ -17,6 +17,7 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'bower_components/materialize/dist/css/materialize.min.css',
   'styles/**/*.css',
 ];
 
@@ -25,6 +26,10 @@ var cssFilesToInject = [
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
 
+  //Load bower components
+  'bower_components/jquery/dist/jquery.min.js',
+
+  'bower_components/materialize/dist/js/materialize.min.js',
   // Load sails.io before everything else
   'js/dependencies/sails.io.js',
 
